@@ -138,7 +138,7 @@ color jellybeans
     set showcmd
     scriptencoding utf-8
     set encoding=utf-8
-
+    set autowrite             " Save on buffer switch
 " }
 
 " Plugins {
@@ -148,6 +148,10 @@ color jellybeans
         let g:pdv_cfg_Package=" "
         let g:pdv_cfg_Author=" "
         let g:pdv_cfg_Version=" "
+    " }
+
+    " CtrlP {
+        let g:ctrlp_max_files=50000
     " }
 
     " neocomplcache {
@@ -183,9 +187,9 @@ color jellybeans
     " }
 
     " UltiSnips {
-        let g:UltiSnipsExpandTrigger="<tab>"
-        let g:UltiSnipsJumpForwardTrigger="<tab>"
-        let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+    "    let g:UltiSnipsExpandTrigger="<tab>"
+    "    let g:UltiSnipsJumpForwardTrigger="<tab>"
+    "    let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
     " }
 
     " NERDTree
@@ -323,6 +327,9 @@ color jellybeans
 
     " format the entire file
     nmap <leader>fef ggVG=
+
+    " Map the buffer list
+    nmap <leader>l :ls
     
     " Fast saves
     nmap <leader>w :w!<cr>
