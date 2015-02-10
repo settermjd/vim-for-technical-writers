@@ -20,72 +20,78 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+" Bundles {
 
-" My Bundles
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/nerdtree'
-Bundle 'wincent/command-t'
-Bundle 'rking/ag.vim'
-Bundle 'kana/vim-textobj-user'
-Bundle 'bling/vim-airline'
-Bundle 'majutsushi/tagbar'
-Bundle 'godlygeek/tabular'
-Bundle 'sandeepcr529/Buffet.vim'
-Bundle 'rbgrouleff/bclose.vim'
-Bundle 'terryma/vim-multiple-cursors'
+    " Let Vundle manage Vundle
+    Bundle 'gmarik/vundle'
 
-" Development
-Bundle 'sheerun/vim-polyglot'
-" Bundle 'Shougo/neocomplcache.vim'
-Bundle 'pangloss/vim-javascript'                                                                             
-Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/neocomplcache.vim'                 
-Bundle 'JazzCore/neocomplcache-ultisnips'
-Bundle 'vim-ruby/vim-ruby'
+    " My Bundles
+    Bundle 'tpope/vim-sensible'
+    Bundle 'tpope/vim-unimpaired'               
+    Bundle 'tpope/vim-surround'
+    Bundle 'tpope/vim-fugitive'
+    Bundle 'Lokaltog/vim-powerline'
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'wincent/command-t'
+    Bundle 'kien/ctrlp.vim'
+    Bundle 'rking/ag.vim'
+    Bundle 'kana/vim-textobj-user'
+    Bundle 'bling/vim-airline'
+    Bundle 'majutsushi/tagbar'
+    Bundle 'godlygeek/tabular'
+    Bundle 'sandeepcr529/Buffet.vim'
+    Bundle 'rbgrouleff/bclose.vim'
+    Bundle 'terryma/vim-multiple-cursors'
 
-" Go Development
-Bundle 'fatih/vim-go'
+    " Development
+    Bundle 'sheerun/vim-polyglot'
+    " Bundle 'Shougo/neocomplcache.vim'
+    Bundle 'pangloss/vim-javascript'                                                                             
+    Bundle 'scrooloose/syntastic'
+    Bundle 'Shougo/neocomplcache.vim'                 
+    Bundle 'JazzCore/neocomplcache-ultisnips'
+    Bundle 'vim-ruby/vim-ruby'
 
-" PHP Development 
-Bundle 'sumpygump/php-documentor-vim'
-Bundle 'spf13/PIV'
-Bundle 'stephpy/vim-php-cs-fixer'
-Bundle 'vim-php/vim-php-refactoring'
-Bundle 'arnaud-lb/vim-php-namespace'
-Bundle 'StanAngeloff/php.vim'
-Bundle 'shawncplus/phpcomplete.vim'
-Bundle 'tomphp/vim-phpdoc'
-Bundle 'mikehaertl/pdv-standalone'
-" Bundle 'Valloric/YouCompleteMe'
+    " Go Development
+    Bundle 'fatih/vim-go'
 
-" Twig/Slim
-Bundle 'lunaru/vim-twig'
-Bundle 'slim-template/vim-slim'
+    " PHP Development 
+    Bundle 'sumpygump/php-documentor-vim'
+    Bundle 'spf13/PIV'
+    Bundle 'stephpy/vim-php-cs-fixer'
+    Bundle 'vim-php/vim-php-refactoring'
+    Bundle 'arnaud-lb/vim-php-namespace'
+    Bundle 'StanAngeloff/php.vim'
+    Bundle 'shawncplus/phpcomplete.vim'
+    Bundle 'tomphp/vim-phpdoc'
+    Bundle 'mikehaertl/pdv-standalone'
+    " Bundle 'Valloric/YouCompleteMe'
 
-" Version Control
-Bundle 'airblade/vim-gitgutter'
+    " Twig/Slim
+    Bundle 'lunaru/vim-twig'
+    Bundle 'slim-template/vim-slim'
 
-" Themes
-Bundle 'vim-scripts/Solarized'
-Bundle 'fatih/molokai'
-Bundle 'nanotech/jellybeans.vim'
+    " Version Control
+    Bundle 'airblade/vim-gitgutter'
 
-" Writing plugins
-Bundle 'plasticboy/vim-markdown'
-Bundle 'nelstrom/vim-markdown-folding'
-Bundle "mikewest/vimroom"
-Bundle "reedes/vim-pencil"
-Bundle "reedes/vim-colors-pencil"
-Bundle "reedes/vim-wordy"
-Bundle "reedes/vim-lexical"
-Bundle "reedes/vim-quotable"
-Bundle "reedes/vim-textobj-sentence"
-Bundle "reedes/vim-litecorrect"
+    " Themes
+    Bundle 'vim-scripts/Solarized'
+    Bundle 'fatih/molokai'
+    Bundle 'nanotech/jellybeans.vim'
+
+    " Writing plugins
+    Bundle 'plasticboy/vim-markdown'
+    Bundle 'nelstrom/vim-markdown-folding'
+    Bundle "mikewest/vimroom"
+    Bundle "reedes/vim-pencil"
+    Bundle "reedes/vim-colors-pencil"
+    Bundle "reedes/vim-wordy"
+    Bundle "reedes/vim-lexical"
+    Bundle "reedes/vim-quotable"
+    Bundle "reedes/vim-textobj-sentence"
+    Bundle "reedes/vim-litecorrect"
+
+" }
 
 let mapleader=","
 
