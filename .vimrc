@@ -48,9 +48,10 @@ call vundle#rc()
     " Bundle 'Shougo/neocomplcache.vim'
     Bundle 'pangloss/vim-javascript'                                                                             
     Bundle 'scrooloose/syntastic'
-    Bundle 'Shougo/neocomplcache.vim'                 
-    Bundle 'JazzCore/neocomplcache-ultisnips'
+    " Bundle 'Shougo/neocomplcache.vim'                 
+    " Bundle 'JazzCore/neocomplcache-ultisnips'
     Bundle 'vim-ruby/vim-ruby'
+    Bundle 'ervandew/supertab'
 
     " Go Development
     Bundle 'fatih/vim-go'
@@ -62,7 +63,7 @@ call vundle#rc()
     Bundle 'vim-php/vim-php-refactoring'
     Bundle 'arnaud-lb/vim-php-namespace'
     Bundle 'StanAngeloff/php.vim'
-    Bundle 'shawncplus/phpcomplete.vim'
+    " Bundle 'shawncplus/phpcomplete.vim'
     Bundle 'tomphp/vim-phpdoc'
     Bundle 'mikehaertl/pdv-standalone'
     " Bundle 'Valloric/YouCompleteMe'
@@ -154,36 +155,17 @@ color jellybeans
         let g:ctrlp_max_files=50000
     " }
 
-    " neocomplcache {
-        let g:acp_enableAtStartup = 0
-        let g:neocomplcache_enable_at_startup = 1
-        let g:neocomplcache_min_syntax_length = 3
-    " }
-
     " Use smartcase {
         let g:neocomplcache_enable_smart_case = 1
         let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
     " }
 
-        " Enable omni completion.
-        autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-        autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-        autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-        autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-        autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-        " Enable heavy omni completion.
-        if !exists('g:neocomplcache_force_omni_patterns')
-          let g:neocomplcache_force_omni_patterns = {}
-        endif
-        let g:neocomplcache_force_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-        let g:neocomplcache_force_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-        let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-
-        " For perlomni.vim setting.
-        " https://github.com/c9s/perlomni.vim
-        let g:neocomplcache_force_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-
+    " Enable omni completion.
+        "autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+        "autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+        "autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+        "autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+        "autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
     " }
 
     " UltiSnips {
@@ -201,6 +183,10 @@ color jellybeans
     " Syntastic
         let g:syntastic_mode_map = { 'mode': 'passive' }
         let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
+    " }
+    
+    " SuperTab {
+        let g:SuperTabDefaultCompletionType = "context"
     " }
 " }
 
@@ -256,9 +242,6 @@ color jellybeans
         autocmd FileType php nnoremap <buffer> execute "set tags=" . g:project_tags
 
         autocmd FileType php setlocal ts=4 sts=4 sw=4
-
-        " Auto completion
-        autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
         " Strip trailing white space from .php files
         autocmd BufWritePre *.php :%s/\s\+$//e
