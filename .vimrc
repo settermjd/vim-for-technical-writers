@@ -79,6 +79,7 @@ call vundle#rc()
     Bundle 'vim-scripts/Solarized'
     Bundle 'fatih/molokai'
     Bundle 'nanotech/jellybeans.vim'
+    Bundle 'jpo/vim-railscasts-theme'
 
     " Writing plugins
     Bundle 'plasticboy/vim-markdown'
@@ -96,16 +97,20 @@ call vundle#rc()
 
 let mapleader=","
 
-" Colour Scheme
-color jellybeans
-
 " General Configuration Settings {
 
     " gvim {
-        " Clean up the GUI in Gvim
+        " Clean up the GUI in Gvim & MacVim
         if has("gui_running")
-            set guifont=Monaco\ 13 
+            set guifont=Monaco:h13 
+            set guioptions-=r         " Remove right scrollbar
+            set guioptions-=T         " Remove toolbar
+            set lines=40 columns=100  " UI size
             set linespace=2 
+            colorscheme railscasts
+        else 
+            colorscheme railscasts
+            color railscasts
         endif
     " }
 
