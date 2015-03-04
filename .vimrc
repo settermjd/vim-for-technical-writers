@@ -159,6 +159,8 @@ let mapleader=","
     scriptencoding utf-8
     set encoding=utf-8
     set autowrite             " Save on buffer switch
+    set autoread              " Check when a file is edited by another program
+
 " }
 
 " Plugins {
@@ -221,6 +223,10 @@ let mapleader=","
 
     " Configurations for Markdown files
     autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+    " Also setting text files as Markdown, effectively, as the same rules
+    " largely apply
+    autocmd BufNewFile,BufReadPost *.txt set filetype=markdown
 
     " Configurations for PHP files
     autocmd BufNewFile,BufReadPost *.php set filetype=php
