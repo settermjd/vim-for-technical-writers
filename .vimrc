@@ -80,6 +80,7 @@ call vundle#rc()
          \    },
          \ }
     Bundle 'Shougo/unite.vim'
+    Bundle 'm2mdas/phpcomplete-extended'
 
     " Twig/Slim
     Bundle 'lunaru/vim-twig'
@@ -186,10 +187,8 @@ let mapleader=","
         "autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
     " }
 
-    " UltiSnips {
-    "    let g:UltiSnipsExpandTrigger="<tab>"
-    "    let g:UltiSnipsJumpForwardTrigger="<tab>"
-    "    let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+    " phpcomplete-extended {
+        let g:phpcomplete_index_composer_command = 'composer'
     " }
 
     " NERDTree
