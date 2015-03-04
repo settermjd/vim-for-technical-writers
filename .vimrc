@@ -198,6 +198,11 @@ let mapleader=","
         let NERDTreeHighlightCursorline=1
         let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
     " }
+    
+    " vim-markdown {
+    "   Highlight YAML frontmatter as used by Jekyll 
+        let g:vim_markdown_frontmatter=1        
+    " }
 
     " Syntastic
         let g:syntastic_mode_map = { 'mode': 'passive' }
