@@ -55,6 +55,7 @@ call vundle#rc()
 
     " Go Development
     Bundle 'fatih/vim-go'
+    Bundle 'nsf/gocode'
 
     " PHP Development 
     Bundle 'sumpygump/php-documentor-vim'
