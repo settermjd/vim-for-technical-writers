@@ -42,6 +42,8 @@ call vundle#rc()
     Bundle 'sandeepcr529/Buffet.vim'
     Bundle 'rbgrouleff/bclose.vim'
     Bundle 'terryma/vim-multiple-cursors'
+    Bundle 'marijnh/tern_for_vim'
+    Bundle 'SirVer/ultisnips'
 
     " Development
     Bundle 'sheerun/vim-polyglot'
@@ -68,6 +70,16 @@ call vundle#rc()
     Bundle 'tomphp/vim-phpdoc'
     Bundle 'mikehaertl/pdv-standalone'
     " Bundle 'Valloric/YouCompleteMe'
+    Bundle 'Shougo/vimproc.vim', {
+         \ 'build' : {
+         \     'windows' : 'tools\\update-dll-mingw',
+         \     'cygwin' : 'make -f make_cygwin.mak',
+         \     'mac' : 'make -f make_mac.mak',
+         \     'linux' : 'make',
+         \     'unix' : 'gmake',
+         \    },
+         \ }
+    Bundle 'Shougo/unite.vim'
 
     " Twig/Slim
     Bundle 'lunaru/vim-twig'
