@@ -94,6 +94,9 @@ call vundle#rc()
     Bundle 'fatih/molokai'
     Bundle 'nanotech/jellybeans.vim'
     Bundle 'jpo/vim-railscasts-theme'
+    Bundle 'lokaltog/vim-distinguished'
+    Bundle 'chriskempson/vim-tomorrow-theme'
+    Bundle 'jacekd/vim-iawriter'
 
     " Writing plugins
     Bundle 'plasticboy/vim-markdown'
@@ -123,8 +126,8 @@ let mapleader=","
             set linespace=2 
             colorscheme railscasts
         else 
-            colorscheme railscasts
-            color railscasts
+          set background=dark
+          colorscheme solarized
         endif
     " }
 
