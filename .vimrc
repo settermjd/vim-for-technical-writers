@@ -61,6 +61,8 @@ call vundle#rc()
     Bundle 'myhere/vim-nodejs-complete'
     Bundle 'maksimr/vim-jsbeautify'
     Bundle 'jelera/vim-javascript-syntax'
+    Bundle 'nathanaelkane/vim-indent-guides'
+    Bundle 'Raimondi/delimitMate'
 
     " Go Development
     Bundle 'fatih/vim-go'
