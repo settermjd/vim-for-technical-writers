@@ -54,6 +54,13 @@ call vundle#rc()
     " Bundle 'JazzCore/neocomplcache-ultisnips'
     Bundle 'vim-ruby/vim-ruby'
     Bundle 'ervandew/supertab'
+    Bundle 'hallettj/jslint.vim'
+    Bundle 'walm/jshint.vim'
+    Bundle 'digitaltoad/vim-jade'
+    Bundle 'guileen/vim-node'
+    Bundle 'myhere/vim-nodejs-complete'
+    Bundle 'maksimr/vim-jsbeautify'
+    Bundle 'jelera/vim-javascript-syntax'
 
     " Go Development
     Bundle 'fatih/vim-go'
@@ -187,7 +194,7 @@ let mapleader=","
     " Enable omni completion.
         "autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
         "autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-        "autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+        autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
         "autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
         "autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
     " }
