@@ -172,6 +172,7 @@ let mapleader=","
     set encoding=utf-8
     set autowrite             " Save on buffer switch
     set autoread              " Check when a file is edited by another program
+    set visualbell            " disable beeping and visual notification
 
 " }
 
