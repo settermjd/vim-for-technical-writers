@@ -133,7 +133,8 @@ let mapleader=","
             set guioptions-=T         " Remove toolbar
             set lines=40 columns=100  " UI size
             set linespace=2 
-            colorscheme railscasts
+            set background=dark
+            colorscheme pencil
             set guicursor+=n-v-c:blinkon0   " disable blinking in the cursor
             set guicursor+=i:blinkwait10
             set guicursor+=a:blinkon0       " disable blinking cursor in all modes
