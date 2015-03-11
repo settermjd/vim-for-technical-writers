@@ -246,6 +246,9 @@ let mapleader=","
 
     " Configurations for Markdown files
     autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+    "
+    " Automatically remove trailing whitespace on Markdown files
+    autocmd BufWritePre *.md :%s/\s\+$//e
 
     " Also setting text files as Markdown, effectively, as the same rules
     " largely apply
