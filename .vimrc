@@ -110,14 +110,15 @@ call vundle#rc()
     " Writing plugins
     Bundle 'plasticboy/vim-markdown'
     Bundle 'nelstrom/vim-markdown-folding'
-    Bundle "mikewest/vimroom"
-    Bundle "reedes/vim-pencil"
-    Bundle "reedes/vim-colors-pencil"
-    Bundle "reedes/vim-wordy"
-    Bundle "reedes/vim-lexical"
-    Bundle "reedes/vim-quotable"
-    Bundle "reedes/vim-textobj-sentence"
-    Bundle "reedes/vim-litecorrect"
+    Bundle 'mikewest/vimroom'
+    Bundle 'reedes/vim-pencil'
+    Bundle 'reedes/vim-colors-pencil'
+    Bundle 'reedes/vim-wordy'
+    Bundle 'reedes/vim-lexical'
+    Bundle 'reedes/vim-quotable'
+    Bundle 'reedes/vim-textobj-sentence'
+    Bundle 'reedes/vim-litecorrect'
+    Bundle 'vim-scripts/LanguageTool' " Add proof-reading and grammar support https://www.languagetool.org
 
 " }
 
