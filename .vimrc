@@ -446,7 +446,7 @@ augroup pencil
 augroup END
 
 function SetMarkdownOptions()
-  setlocal spell
+  setlocal spell spelllang=en_us
   nmap <leader>l <Plug>Ysurroundiw]%a(<C-R>*)<Esc>
 endfunction
 
