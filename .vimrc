@@ -144,6 +144,15 @@ let mapleader=","
         endif
     " }
 
+    " Automatically set the background based on the time of day
+    " Thanks to Benjamin Tan: http://goo.gl/UcErBh
+    let hour = strftime("%H")
+    if 6 <= hour && hour < 18
+      set background=light
+    else
+      set background=dark
+    endif
+
     filetype plugin indent on " Automatically detect file types.
     syntax on                 " syntax highlighting
     set mouse=a               " automatically enable mouse usage
