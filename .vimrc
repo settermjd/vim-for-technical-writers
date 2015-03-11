@@ -118,7 +118,8 @@ call vundle#rc()
     Bundle 'reedes/vim-quotable'
     Bundle 'reedes/vim-textobj-sentence'
     Bundle 'reedes/vim-litecorrect'
-    Bundle 'vim-scripts/LanguageTool' " Add proof-reading and grammar support https://www.languagetool.org
+    " Add proof-reading and grammar support https://www.languagetool.org
+    Bundle 'vim-scripts/LanguageTool' 
 
 " }
 
