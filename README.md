@@ -2,6 +2,8 @@
 
 Welcome to Vim for Technical Writers. The aim of this project is to provide a professional Vim configuration which is just what technical writers, specifically those who specialise around software development, web application development, need.
 
+![vim editing markdown](./images/vim-editing-markdown.png)
+
 ## What Does It Do?
 
 [Vim](http://vim.org) is an incredibly powerful tool, one which is extremely customisable for virtually any and every need. But by default it has quite a limited configuration. So to save you a lot of time setting it up to suit your needs, this project will give you, the technical writer, a near-perfect setup for two primary tasks:
