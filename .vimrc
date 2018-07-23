@@ -507,11 +507,12 @@ augroup pencil
                               \ | call textobj#sentence#init()
   autocmd FileType markdown,mkd,md call SetMarkdownOptions() 
   autocmd FileType rst call SetRestructuredTextOptions() 
-
   autocmd FileType c,h call SetCOptions() 
+  autocmd FileType go       call SetGoOptions()
   autocmd FileType Makefile call SetMakefileOptions() 
   autocmd FileType text            call pencil#init({'wrap': 'soft'})
 
+augroup END
 
   " Highlight words to avoid in tech writing
   " =======================================
@@ -529,7 +530,16 @@ augroup pencil
   autocmd InsertEnter * match TechWordsToAvoid /\cobviously\|basically\|simply\|of\scourse\|clearly\|just\|everyone\sknows\|however,\|so,\|easy/
   autocmd InsertLeave * match TechWordsToAvoid /\cobviously\|basically\|simply\|of\scourse\|clearly\|just\|everyone\sknows\|however,\|so,\|easy/
   autocmd BufWinLeave * call clearmatches()
-augroup END
+
+function SetGoOptions()
+  if has("gui_running")
+    colorscheme Tomorrow-Night-Eighties
+    set guifont=InputMono:h14
+    set guioptions-=r
+    set guioptions-=T
+    set linespace=2
+  endif
+endfunction
 
 function SetCOptions()
   if has("gui_running")
