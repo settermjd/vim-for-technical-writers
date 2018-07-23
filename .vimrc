@@ -394,6 +394,11 @@ let mapleader=","
         autocmd FileType html setlocal ts=2 sts=2 sw=2
     " }
 
+    " GitGutter {
+        " enable highlight of git changes
+        let g:gitgutter_linehighlightseNable = 1
+    " }
+
     " Go {
         au FileType go nmap <Leader>s <Plug>(go-implements)
         au FileType go nmap <Leader>i <Plug>(go-info)
