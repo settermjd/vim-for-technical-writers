@@ -329,6 +329,7 @@ let mapleader=","
         autocmd FileType php inoremap <buffer> <LocalLeader>d <ESC>:call PhpDocSingle()<CR>i 
         autocmd FileType php nnoremap <buffer> <LocalLeader>d :call PhpDocSingle()<CR> 
         autocmd FileType php vnoremap <buffer> <LocalLeader>d :call PhpDocRange()<CR>
+        autocmd FileType php nnoremap <buffer> <F5> :!php -l %<CR>
 
         " PHP Namespace remaps
         autocmd FileType php noremap <buffer> <LocalLeader>n :call PhpInsertUse()<CR>
