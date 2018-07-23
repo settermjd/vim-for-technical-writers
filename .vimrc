@@ -35,6 +35,8 @@ call vundle#begin()
     Bundle 'kien/ctrlp.vim'
     Bundle 'rking/ag.vim'
     Bundle 'bling/vim-airline'
+    Bundle 'vim-airline/vim-airline-themes'
+    Bundle 'devnul1/heman'
     Bundle 'majutsushi/tagbar'
     Bundle 'godlygeek/tabular'
     Bundle 'sandeepcr529/Buffet.vim'
@@ -45,9 +47,12 @@ call vundle#begin()
     Bundle 'sniphpets/sniphpets'
     Bundle 'sniphpets/sniphpets-common'
 
+    " Generally helpful plugins
+    Bundle 'mbbill/undotree'
+
     " Development
     Bundle 'sheerun/vim-polyglot'
-    Bundle 'scrooloose/syntastic'
+    Bundle 'vim-syntastic/syntastic'
     Bundle 'vim-ruby/vim-ruby'
     Bundle 'hallettj/jslint.vim'
     Bundle 'walm/jshint.vim'
@@ -60,6 +65,11 @@ call vundle#begin()
     Bundle 'Raimondi/delimitMate'
     Bundle 'scrooloose/nerdcommenter'
     Bundle 'editorconfig/editorconfig-vim'
+    Bundle 'phpactor/phpactor'
+    Bundle 'udalov/kotlin-vim'
+    Bundle 'ntpeters/vim-better-whitespace'
+    Bundle 'mustache/vim-mustache-handlebars'
+    Bundle 'phan/phan'
 
     " C/C++ Development
     Bundle 'Rip-Rip/clang_complete'
@@ -109,6 +119,7 @@ call vundle#begin()
     Bundle 'dracula/vim'
     Bundle 'kamwitsta/nordisk'
     Bundle 'joshdick/onedark.vim'
+    Bundle 'skreek/skeletor'
 
     " Writing plugins
     Bundle 'plasticboy/vim-markdown'
