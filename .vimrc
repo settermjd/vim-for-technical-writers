@@ -270,12 +270,14 @@ let mapleader=","
 " }
 
 " Automatic settings {
+    " Remove whitespace at the end of the line for certain file extensions 
     autocmd BufWritePre *.rb :%s/\s\+$//e
     autocmd BufWritePre *.go :%s/\s\+$//e
     autocmd BufWritePre *.haml :%s/\s\+$//e
     autocmd BufWritePre *.html :%s/\s\+$//e
     autocmd BufWritePre *.scss :%s/\s\+$//e
     autocmd BufWritePre *.slim :%s/\s\+$//e
+    autocmd BufWritePre *.rst :%s/\s\+$//e
     autocmd BufWritePre *.php :%s/\s\+$//e
     "autocmd BufEnter *.md :call SetMarkdownOptions()
 
@@ -406,6 +408,9 @@ let mapleader=","
     map <Up>   gk
     nnoremap j gj
     nnoremap k gk
+
+    " Remove all trailing whitespace by pressing F9
+    nnoremap <F9> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
     " Resize buffers
     if bufwinnr(1)
