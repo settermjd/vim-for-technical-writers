@@ -226,6 +226,22 @@ let mapleader=","
         let g:pdv_cfg_Version=" "
     " }
     
+    " phpactor Omni-completion {
+        autocmd FileType php setlocal omnifunc=phpactor#Complete
+
+        " Include use statement
+        map <Leader>u :call phpactor#UseAdd()<CR>
+        map <Leader>o :call phpactor#GotoType()<CR>
+        map <Leader>pd :call phpactor#OffsetTypeInfo()<CR>
+        map <Leader>i :call phpactor#ReflectAtOffset()<CR>
+        map <Leader>pfm :call phpactor#MoveFile()<CR>
+        map <Leader>pfc :call phpactor#CopyFile()<CR>
+        map <Leader>tt :call phpactor#Transform()<CR>
+
+        " Show information about "type" under cursor including current frame
+        nnoremap <silent><Leader>d :call phpactor#OffsetTypeInfo()<CR>
+    " }
+
     " airline {
         " don't enable the tabline (seems a bit confusing)
         let g:airline#extensions#tabline#enabled = 0
