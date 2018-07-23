@@ -10,7 +10,6 @@
 "    - Evan Coury (aka EvanDotPro), Tom Oram (aka TomPHP) for their configs and support
 "      in getting used to vim and learning how to do the basic configuration which I've
 "      made here.
-"    - Jeffrey Way for his configuration which I borrowed some ideas and settings from.
 "    - All of the authors of the other amazing Vim plugins I use every day.
 "
 " }
