@@ -26,7 +26,7 @@ call vundle#begin()
 
     " My Bundles
     Bundle 'tpope/vim-sensible'
-    Bundle 'tpope/vim-unimpaired'               
+    Bundle 'tpope/vim-unimpaired'
     Bundle 'tpope/vim-surround'
     Bundle 'tpope/vim-fugitive'
     Bundle 'tpope/vim-repeat'
@@ -134,7 +134,7 @@ call vundle#begin()
     Bundle 'reedes/vim-textobj-sentence'
     Bundle 'reedes/vim-litecorrect'
     " Add proof-reading and grammar support https://www.languagetool.org
-    Bundle 'vim-scripts/LanguageTool' 
+    Bundle 'vim-scripts/LanguageTool'
     Bundle 'rhysd/vim-grammarous'
     Bundle 'laktek/distraction-free-writing-vim'
     Bundle 'christoomey/vim-titlecase'
