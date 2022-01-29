@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to technical writing
 
 Welcome to Vim for Technical Writers. The aim of this project is to provide a professional Vim configuration which is just what technical writers, specifically those who specialise around software development, web application development, need.
 
